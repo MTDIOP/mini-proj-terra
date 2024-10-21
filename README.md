@@ -42,7 +42,7 @@
         ├── main.tf
 
         ├── outputs.tf
-        
+
         └── variable.tf
 
 7 directories, 15 files
@@ -78,6 +78,9 @@ Go to
 ----------------NGINX Install------------------
 ![alt text](image-7.png)
 
+----------------S3 TFSATE------------------
+S3 Tfstate 
+![alt text](image-8.png)
 ##################Destroy#########################
 
 # terraform destroy
