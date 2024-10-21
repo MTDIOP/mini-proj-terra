@@ -1,26 +1,48 @@
 .
 ├── README.md
+
 ├── app
+
 │   └── main.tf
+
 ├── creds
+
 │   └── credentials
+
 └── modules
+
     ├── ebs_m
+
     │   ├── main.tf
+
     │   ├── outputs.tf
+
     │   └── variable.tf
+
     ├── ec2_m
+
     │   ├── devops-mdiop.pem
+
     │   ├── main.tf # 
+
     aws ec2 describe-images  --region us-east-1 --owners amazon --filters Name=name,Values=*ubuntu-bionic* Name=architecture,Values=x86_64
+
     │   ├── outputs.tf
+
     │   └── variable.tf
+
     ├── ippub_m
+
+
     │   ├── main.tf
+
     │   └── outputs.tf
+
     └── secu_m
         ├── main.tf
+
         ├── outputs.tf
+        
         └── variable.tf
 
 7 directories, 15 files
@@ -52,6 +74,9 @@ Go to
 
 ----------------aws_network_interface_sg_attachment------------------
 ![alt text](image-6.png)
+
+----------------NGINX Install------------------
+![alt text](image-7.png)
 
 ##################Destroy#########################
 
