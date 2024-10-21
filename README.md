@@ -33,17 +33,26 @@ Go to
 # terraform apply
 ##################EC2 image #########################
 ------------------------Volume-----------------------------
+![alt text](image.png)
 
 ------------------------Elastic IP-------------------------
+![alt text](image-1.png)
 
 ------------------------Security Group----------------------
+![alt text](image-2.png)
 
 ------------------------EC2--------------------------------
+![alt text](image-3.png)
+
 ------------------------aws_volume_attachment------------------------
+![alt text](image-5.png)
 
 ------------------------aws_eip_association------------------------
+![alt text](image-4.png)
 
-------------------------aws_network_interface_sg_attachment------------------------
+----------------aws_network_interface_sg_attachment------------------
+![alt text](image-6.png)
+
 ##################Destroy#########################
 
 # terraform destroy
