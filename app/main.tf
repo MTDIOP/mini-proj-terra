@@ -3,10 +3,13 @@ provider "aws" {
   shared_credentials_files = ["../creds/credentials"]
   profile                 = "miniproj_access_aws"
 }
-
+locals {
+ l_availability_zone = "us-east-1a"
+}
 module "mp_ebs" {
   source = "./../modules/ebs_m"
   ebs_size = 6
+  ebs_availability_zone = local.l_availability_zone
 }
 
 module "mp_security_grp" {
@@ -20,7 +23,8 @@ module "mp_eip" {
 
 module "mp_instance" {
   source = "./../modules/ec2_m"
-  instancetype="t2.micro"
+  instancetype ="a1.medium"
+  availability_zone = local.l_availability_zone
 }
 
 resource "aws_volume_attachment" "ebs_att" {
@@ -51,13 +55,15 @@ provisioner "local-exec" {
     # generic remote provisioners (i.e. file/remote-exec)
     connection {
       type        = "ssh"
-      user        = "ec2-user"
-      private_key = file("./../modules/creds/devops-mdiop.pem")
+      user        = "ubuntu"
+      private_key = file("./../creds/devops-mdiop.pem")
       host        = self.public_ip
     }
 
     inline = [
-      "sudo amazon-linux-extras install -y nginx1",
+      "sudo apt update -y",
+      "sudo apt upgrade -y",
+      "sudo apt install nginx -y",
       "sudo systemctl start nginx"
     ]
   }
