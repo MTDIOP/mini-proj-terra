@@ -52,7 +52,7 @@ provisioner "local-exec" {
     connection {
       type        = "ssh"
       user        = "ec2-user"
-      private_key = file("./../modules/ec2_m/devops-mdiop.pem")
+      private_key = file("./../modules/creds/devops-mdiop.pem")
       host        = self.public_ip
     }
 

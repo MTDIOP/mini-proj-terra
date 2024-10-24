@@ -1,3 +1,4 @@
 creds/
 .terraform/         
 .terraform.lock.hcl
+/bin/bash: line 1: q: command not found
