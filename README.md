@@ -58,7 +58,7 @@ Go to
 ![alt text](image.png)
 
 ------------------------Elastic IP-------------------------
-![alt text](image-1.png)
+![alt text](image-9.png)
 
 ------------------------Security Group----------------------
 ![alt text](image-2.png)
@@ -76,7 +76,7 @@ Go to
 ![alt text](image-6.png)
 
 ----------------NGINX Install------------------
-![alt text](image-7.png)
+![alt text](image-10.png)
 
 ----------------S3 TFSATE------------------
 S3 Tfstate 

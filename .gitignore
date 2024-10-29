@@ -2,3 +2,4 @@ creds/
 .terraform/         
 .terraform.lock.hcl
 terraform.tfstate
+.vscode/

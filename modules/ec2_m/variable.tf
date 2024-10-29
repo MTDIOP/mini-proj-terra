@@ -11,3 +11,9 @@ variable "aws_common_tag" {
     Name = "ec2-mp-mdiop"
   }
 }
+
+variable "availability_zone" {
+  type        = string
+  description = "set availability zone"
+  default     = "us-east-1a"
+}
