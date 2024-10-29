@@ -55,32 +55,33 @@ Go to
 # terraform apply
 ##################EC2 image #########################
 ------------------------Volume-----------------------------
-![alt text](image.png)
+![alt text](assets/image.png)
 
 ------------------------Elastic IP-------------------------
-![alt text](image-9.png)
+![alt text](assets/image-9.png)
 
 ------------------------Security Group----------------------
-![alt text](image-2.png)
+![alt text](assets/image-2.png)
 
 ------------------------EC2--------------------------------
-![alt text](image-3.png)
+![alt text](assets/image-3.png)
 
 ------------------------aws_volume_attachment------------------------
-![alt text](image-5.png)
+![alt text](assets/image-5.png)
 
 ------------------------aws_eip_association------------------------
-![alt text](image-4.png)
+![alt text](assets/image-4.png)
 
 ----------------aws_network_interface_sg_attachment------------------
-![alt text](image-6.png)
+![alt text](assets/image-6.png)
 
 ----------------NGINX Install------------------
-![alt text](image-10.png)
+![alt text](assets/image-10.png)
 
 ----------------S3 TFSATE------------------
 S3 Tfstate 
-![alt text](image-8.png)
+![alt text](assets/image-8.png)
+
 ##################Destroy#########################
 
 # terraform destroy
